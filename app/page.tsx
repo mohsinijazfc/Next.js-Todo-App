@@ -2,8 +2,8 @@
 import { useState } from "react";
 
 export default function Home() {
-  const [todos, setTodos] = useState([]);
-  const [text, setText] = useState("");
+  const [todos, setTodos] = useState<string[]>([]);
+  const [text, setText] = useState<string>("");
 
   return (
     <main style={{ padding: 40 }}>
